@@ -1,0 +1,91 @@
+Here are the Python programs for each task:
+
+---
+
+**A. Program to print Python data types: numeric, sequence type, Boolean, set, dictionary.**
+
+```python
+# Numeric
+numeric_example = 42
+print("Numeric Example:", numeric_example)
+
+# Sequence Type
+sequence_example = [1, 2, 3, 4]
+print("Sequence Type Example (List):", sequence_example)
+
+# Boolean
+boolean_example = True
+print("Boolean Example:", boolean_example)
+
+# Set
+set_example = {1, 2, 3}
+print("Set Example:", set_example)
+
+# Dictionary
+dictionary_example = {"key1": "value1", "key2": "value2"}
+print("Dictionary Example:", dictionary_example)
+```
+
+---
+
+**B. Program to print the greatest of three numbers using `if-elif`.**
+
+```python
+# Input three numbers
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+c = int(input("Enter third number: "))
+
+# Find the greatest
+if a > b and a > c:
+    print("The greatest number is:", a)
+elif b > c:
+    print("The greatest number is:", b)
+else:
+    print("The greatest number is:", c)
+```
+
+---
+
+**C. Program to decide whether a given number is perfect using a function.**
+
+```python
+def is_perfect_number(num):
+    divisors_sum = sum(i for i in range(1, num) if num % i == 0)
+    return divisors_sum == num
+
+# Input number
+number = int(input("Enter a number: "))
+
+# Check if it's a perfect number
+if is_perfect_number(number):
+    print(number, "is a Perfect Number.")
+else:
+    print(number, "is not a Perfect Number.")
+```
+
+---
+
+**D. Program to print a series of prime numbers from 1 to n using a for loop.**
+
+```python
+# Function to check if a number is prime
+def is_prime(num):
+    if num < 2:
+        return False
+    for i in range(2, int(num ** 0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
+
+# Input range
+n = int(input("Enter the range n: "))
+
+# Print prime numbers
+print("Prime numbers from 1 to", n, "are:")
+for i in range(1, n + 1):
+    if is_prime(i):
+        print(i, end=" ")
+```
+
+Let me know if you need further explanations or modifications!
